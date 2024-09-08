@@ -1,0 +1,96 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* height: auto; */
+
+}
+
+ .container {
+    background-color: #333;
+    /* overflow: hidden; */
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: chartreuse;
+}
+h1{
+    color: azure;
+}
+.img{
+    
+    width: 100%;
+    height: auto;
+}
+.tab-content-det{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+   height: auto;
+    align-items:start;
+    color: black; 
+    gap: 20px;
+}
+
+.tab-content-det .tab-labels{
+    width: 250px;
+    
+}
+.tab-content-det .tab-labels label{
+    display: block;
+}
+
+.scroll{
+     height: 300px;
+     overflow: hidden;
+     overflow-y: auto;
+     margin: 25px 0;
+     width: 100%;
+}
+
+ .footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(52, 227, 3);
+    color:black;
+    justify-content: space-evenly;
+    padding-top:60px ;
+    padding-bottom: 50px;
+
+    
+ }
+ .tabs input[type="radio"] {
+    display: none;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    
+}
+
+#tab1:checked~.tab-content #content1,
+#tab2:checked~.tab-content #content2,
+#tab3:checked~.tab-content #content3,
+#tab4:checked~.tab-content #content4 {
+    display: block;
+}
+
+
+ 
